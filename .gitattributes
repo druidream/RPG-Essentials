@@ -1,0 +1,24 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# C#
+*.cs text linguist-language=C#
+
+# Unity generated / serialized YAML
+*.asset linguist-generated
+*.mat linguist-generated
+*.meta linguist-generated
+*.prefab linguist-generated
+*.unity linguist-generated
+*.controller linguist-generated
+# Animation curves expand to huge YAML; treat as binary for git stat/diff
+*.anim binary linguist-generated
+# Unity Editor window layouts; GitHub otherwise classifies .wlt as Wolfram
+*.wlt linguist-generated
+
+# Unity shaders (vendored TMP etc.) — keep as text for diffs, exclude from language stats
+*.shader text linguist-generated
+*.shadergraph text linguist-generated
+*.hlsl text linguist-generated
+*.cginc text linguist-generated
+*.compute text linguist-generated

@@ -51,6 +51,7 @@ ExportedObj/
 *.csproj
 *.unityproj
 *.sln
+*.slnx
 *.suo
 *.tmp
 *.user
@@ -105,3 +106,12 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# TextMesh Pro unused pipeline shaders
+# Essential Resources ships HDRP/URP/XR shadergraphs (~47k YAML lines).
+# Font materials use TMP_SDF-Mobile.
+**/TextMesh Pro/Shaders/TMP_SDF-HDRP*.shadergraph
+**/TextMesh Pro/Shaders/TMP_SDF-HDRP*.shadergraph.meta
+**/TextMesh Pro/Shaders/TMP_SDF-URP*.shadergraph
+**/TextMesh Pro/Shaders/TMP_SDF-URP*.shadergraph.meta
+**/TextMesh Pro/Shaders/*SpaceWarp*
